@@ -7,6 +7,7 @@ import designExample2Image from "@/assets/images/design-example-2.png";
 import Pointer from "@/components/Pointer";
 import { motion, useAnimate } from "framer-motion"
 import { useEffect } from "react";
+import cursorYouImage from "@/assets/images/cursor-you.svg"
 
 export default function Hero() {
   const [leftDesignScope, leftDesignAnimate] = useAnimate();
@@ -26,23 +27,25 @@ export default function Hero() {
     ]);
 
     rightDesignAnimate([
-      [rightDesignScope.current, { opacity: 1 }, { duration: 0.5 }],
+      [rightDesignScope.current, { opacity: 1 }, { duration: 0.5, delay:1.5}],
       [rightDesignScope.current, { y: 0, x: 0 }, { duration: 0.5 }]
     ]);
     rightPointerAnimate([
       [rightPointerScope.current, { opacity: 1 }, { duration: 0.5, delay: 1.5 }],
       [rightPointerScope.current, { x: 175, y: 0 }, { duration: 0.5 }],
-      [rightPointerScope.current, { x: 0, y: [0, 20, 0] }, { duration: 0.5, ease: "easeInOut" }],
+      [rightPointerScope.current, { x: 0, y: [0, 20, 0] }, { duration: 0.5 }],
     ]);
   }, [])
   return (
-    <section className="py-24 overflow-x-clip relative bg-black text-white">
+    <section className="py-24 overflow-x-clip relative bg-black text-white" style={{
+      cursor:`url(${cursorYouImage.src}),auto`
+    }}>
       <div className="container relative z-10">
         {/* Background Images */}
         <motion.div ref={leftDesignScope}
           initial={{ opacity: 0, y: 100, x: -100 }}
           drag
-          className="absolute -left-32 top-16 hidden lg:block ">
+          className="absolute -left-32 top-16 hidden lg:block z-0 ">
           <Image src={designExample1Image} alt="Design example 1 image"
           draggable="false"/>
         </motion.div>
@@ -56,7 +59,7 @@ export default function Hero() {
         {/* Pointer Badges */}
         <motion.div
           ref={rightDesignScope}
-          initial={{ opacity: 0, }}
+          initial={{ opacity: 0, x:100 , y: 100 }}
           drag
           className="absolute -right-72 -top-16 hidden lg:block">
           <Image src={designExample2Image} alt="Design example 2 image"
@@ -71,7 +74,7 @@ export default function Hero() {
         {/* Hero Content */}
         <div className="flex justify-center z-10 relative">
           <div className="inline-flex py-1 px-3 bg-gradient-to-r from-purple-400 to-pink-400 rounded-full text-neutral-950 font-semibold">
-            $7.5M seed round raised
+            $7.5M seed round raised  b  
           </div>
         </div>
 

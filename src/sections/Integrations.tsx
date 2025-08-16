@@ -1,5 +1,4 @@
 import Tag from "@/components/Tag";
-import { div } from "framer-motion/client";
 import figmaIcon from "@/assets/images/figma-logo.svg";
 import notionIcon from "@/assets/images/notion-logo.svg";
 import slackIcon from "@/assets/images/slack-logo.svg";
@@ -27,7 +26,7 @@ export default function Integrations() {
                     <Tag>Integrations</Tag>
                     <h2 className="text-6xl font-medium mt-6">Plays well with{" "}<span className="text-lime-400">others</span>
                     </h2>
-                    <p className="text-white/50 mt-4 text-lg">Layers seamlessly connects with your workflow and collaborates across platforms.</p>
+                    <p className="text-white/50 mt-4 text-lg">Edito seamlessly connects with your workflow and collaborates across platforms.</p>
                 </div>
                 <div>
                     <div className="h-[400px] lg:h-[800px]mt-8 lg:mt-0 overflow-hidden grid md:grid-cols-2 gap-4 [mask-image:linear-gradient(to_bottom,transparent,black_10%,black_90%,transparent)]">

@@ -26,7 +26,7 @@ export default function IntegrationColumn(props: {
                 ease:"linear",
             }
         }
-        className={twMerge("flex flex-col gap-4 pb-4",className)}>
+        className={twMerge("flex flex-col gap-4 pb-4")}>
             {Array.from({length:2}).map((_,i)=>(
                 <Fragment key={i}>
                      {integrations.map((integration) => (

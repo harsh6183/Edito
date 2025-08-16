@@ -28,7 +28,7 @@ export default function Introduction() {
             <div className="container">
                 <div className="top-20 sticky md:top-28 lg:top-40">
                     <div className="flex justify-center">
-                        <Tag>Introducing Layers</Tag>
+                        <Tag>Introducing Edito</Tag>
                     </div>
                     <div className="text-4xl md:6xl lg:text-7xl text-center font-medium mt-10">
                         <span>Your creative process deserves better.</span>{" "}
@@ -39,7 +39,7 @@ export default function Introduction() {
                             ))
                             }
                         </span>
-                        <span className="text-lime-400 block">That's why we build layers.</span>
+                        <span className="text-lime-400 block">That's why we build Edito.</span>
                     </div>
                 </div>
                 <div className="h-[150vh]" ref={scrollTarget}></div>

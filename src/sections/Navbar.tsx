@@ -1,7 +1,7 @@
 "use client"
 
 import Image from "next/image";
-import logoImage from '@/assets/images/logo.svg'
+import logoImage from '@/assets/images/editologo.png'
 import Button from "@/components/Button";
 import { useState } from "react";
 import { twMerge } from "tailwind-merge"; 4
@@ -23,7 +23,7 @@ export default function Navbar() {
                     <div className="border border-white/15 rounded-[27px] md:rounded-full bg-neutral-950/70 backdrop-blur">
                         <div className="grid grid-cols-2 lg:grid-cols-3   p-2 px-4 md-pr-2 items-center " >
                             <div>
-                                <Image src={logoImage} alt="Logo Image" className="h-9 md:h-auto w-auto"></Image>
+                                <Image src={logoImage} alt="Logo Image" className="h-9 px-3 md:h-auto w-auto"></Image>
                             </div>
                             <div className="lg:flex justify-center items-center hidden">
                                 <nav className="flex gap-6 font-medium">

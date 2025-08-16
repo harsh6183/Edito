@@ -83,7 +83,7 @@ export default function Hero() {
         </h1>
 
         <p className="text-center text-lg md:text-xl text-white/60 max-w-2xl mx-auto mt-6 z-10 relative">
-          Design tools shouldn't slow you down. Layers' combination keeps you in your creative flow.
+          Design tools shouldn't slow you down. Edito' combination keeps you in your creative flow.
         </p>
 
         {/* Email Signup */}

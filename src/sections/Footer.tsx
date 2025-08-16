@@ -1,5 +1,4 @@
-import logoImage from "@/assets/images/logo.svg"
-import { a } from "framer-motion/client";
+import logoImage from "@/assets/images/editologo.png"
 import Image from "next/image";
 
 const footerLinks = [
@@ -13,7 +12,7 @@ export default function Footer() {
         <section className="py-16">
             <div className="container">
                 <div className="flex flex-col md:flex-row items-center md:justify-between gap-6">
-                    <Image src={logoImage} alt="Layers logo">
+                    <Image src={logoImage} alt="Edito logo">
 
                     </Image>
                     <div>
